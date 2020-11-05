@@ -25,6 +25,9 @@ func NewIronicExporter(config *ExporterConfig) (*IronicExporter, error) {
 		},
 	}
 
+	// Set Microversion workaround
+	exporter.Client.Microversion = exporter.ExporterConfig.Client.Microversion
+
 	for _, metric := range defaultIronicMetrics {
 		exporter.AddMetric(metric.Name, metric.Fn, metric.Labels, nil)
 	}
