@@ -3,9 +3,10 @@ package exporters
 import (
 	"crypto/tls"
 	"fmt"
-	"github.com/hashicorp/go-uuid"
 	"net/http"
 	"time"
+
+	"github.com/hashicorp/go-uuid"
 
 	"github.com/gophercloud/gophercloud"
 	"github.com/gophercloud/utils/openstack/clientconfig"
