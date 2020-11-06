@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/openstack-exporter/openstack-exporter/exporters"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/log"
 	"github.com/prometheus/common/version"
+	"github.com/shotgun-20/openstack-exporter/exporters"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 
